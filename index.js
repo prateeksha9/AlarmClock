@@ -63,7 +63,7 @@ function clearAlarm() {
 
 // event to Delete a particular alarm
 myList.addEventListener('click', e=> {
-    console.log("removing element")
+//     console.log("removing element")
     if(e.target.classList.contains("deleteAlarm")){
         e.target.parentElement.remove();
     }    
@@ -76,8 +76,8 @@ remove = (value) => {
     alarmList.length = 0;                  // Clear contents
     alarmList.push.apply(alarmList, newList);
     
-    console.log("newList", newList);
-    console.log("alarmList", alarmList);
+//     console.log("newList", newList);
+//     console.log("alarmList", alarmList);
 }
 
 
@@ -102,8 +102,8 @@ addAlarm.addEventListener('submit', e=> {
     if(isNaN(newAlarm)){
         if(!alarmList.includes(newAlarm)){
             alarmList.push(newAlarm);
-            console.log(alarmList);
-            console.log(alarmList.length);
+//             console.log(alarmList);
+//             console.log(alarmList.length);
             showNewAlarm(newAlarm);
             addAlarm.reset();
         } else{
